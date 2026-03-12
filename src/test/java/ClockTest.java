@@ -20,11 +20,11 @@ public class ClockTest extends BaseTest {
         assertNotNull(driver, "הדרייבר לא אותחל!");
 
         clockPage.goToTimer();
-        clockPage.enterTime(); // עודכן כאן
+        clockPage.enterTime();
         System.out.println("הזמן שהוזן: " + clockPage.getDisplayText());
         clockPage.startTimer();
 
         System.out.println("ממתין 30 שניות...");
-        Thread.sleep(30000); // 30 שניות המתנה כנדרש
+        Thread.sleep(30000);
     }
 }

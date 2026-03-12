@@ -10,13 +10,13 @@ import java.time.Duration;
 public class BaseTest {
     protected AndroidDriver driver;
 
-    // פונקציה כללית שכל טסט יקרא לה עם הנתונים שלו
+
     public void setUp(String appPackage, String appActivity) throws MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("emulator-5554");
         options.setAutomationName("UiAutomator2");
         options.setPlatformName("Android");
-        options.setPlatformVersion("9.0"); // ודאי שזה תואם לאמולטור שלך
+        options.setPlatformVersion("9.0");
 
         options.setAppPackage(appPackage);
         options.setAppActivity(appActivity);

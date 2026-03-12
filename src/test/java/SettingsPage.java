@@ -12,7 +12,7 @@ public class SettingsPage {
         this.driver = driver;
     }
 
-    // מזהים נפוצים (ייתכן ותצטרכי לעדכן לפי האינספקטור)
+
     By networkAndInternet = AppiumBy.xpath("//*[@text='Network & internet']");
     By wifiSwitch = AppiumBy.id("android:id/switch_widget");
 
@@ -20,7 +20,7 @@ public class SettingsPage {
         driver.findElement(networkAndInternet).click();
     }
 
-    // פונקציית קסם לגלילה עד שמצאנו טקסט מסוים
+
     public void scrollToText(String text) {
         driver.findElement(AppiumBy.androidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true))" +
